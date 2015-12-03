@@ -1,6 +1,7 @@
 import graphy
 import numpy as np
-import igraph
+
+import nmi
 
 class PerturbedStates(object):
     def __init__(self, dynsys, init_time, unperturbed_state, perturbed_states, 
@@ -154,15 +155,15 @@ def find_optimal_across_time(qualityObj, timepoints, num_runs=1, debug_level=0):
             initial_membership=last_best_membership,
             num_runs=num_runs)
 
-        nmi = 0.0
+        nmival = 0.0
         if last_best_membership is not None:
             best_membership = graphy.partitions.remap2match(best_membership, last_best_membership)
-            nmi = igraph.compare_communities(best_membership, last_best_membership, method='nmi')
+            nmival = nmi.norm_mutual_info(best_membership, last_best_membership)
 
         if debug_level > 0:
-            print('time=%2d nmi=%0.4f #modules=%2d Q=%0.4f %s' % (t, nmi, len(set(best_membership)), best_membership_q, graphy.partitions.to_alphanum_str(best_membership)))
+            print('time=%2d nmi=%0.4f #modules=%2d Q=%0.4f %s' % (t, nmival, len(set(best_membership)), best_membership_q, graphy.partitions.to_alphanum_str(best_membership)))
 
-        saved_best.append( (best_membership_q, nmi, best_membership) )
+        saved_best.append( (best_membership_q, nmival, best_membership) )
         last_best_membership = best_membership
 
     return saved_best
