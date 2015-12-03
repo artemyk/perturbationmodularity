@@ -14,6 +14,6 @@ In order to run the code, the following libraries need to be installed:
 * `numpy`
 * `scipy` for the `scipy.sparse` sparse matrix library
 * `matplotlib` for plotting
-* `dynpy`, a library for running dynamical systems in Python. Installable from PyPi as `pip install dynpy` or as `pip install https://github.com/artemyk/dynpy/archive/master.zip`. For reference, see the [Dynpy GitHub](https://github.com/artemyk/dynpy).
-* `graphy`, a library for generating graphs and running Louvain.  Installable from github as `pip install https://github.com/artemyk/graphy/archive/master.zip`.  For reference, see the [Graphy GitHub](https://github.com/artemyk/graphy).
+* `dynpy`, a library for running dynamical systems in Python. Installable from PyPi as `pip install dynpy` or from GitHub as `pip install https://github.com/artemyk/dynpy/archive/master.zip`. For reference, see the [Dynpy GitHub](https://github.com/artemyk/dynpy).
+* `graphy`, a library for generating graphs and running Louvain.  Installable from GitHub as `pip install https://github.com/artemyk/graphy/archive/master.zip`.  For reference, see the [Graphy GitHub](https://github.com/artemyk/graphy).
 
