@@ -1,3 +1,8 @@
+# Code to findoptimal perturbation modularity decompositions
+# See for details :
+#   A Kolchinsky, AJ Gates, LM Rocha, "Modularity and the Spread of 
+#     Perturbations in Complex Dynamical Systems", Physical Review E, 2015.
+
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
