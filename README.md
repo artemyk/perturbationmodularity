@@ -2,7 +2,7 @@
 
 This repository provides sample Python code for decomposing dynamical systems into weakly-coupled modules using the concept of *perturbation modularity*. This is defined and explained in the following paper:
 
-> A Kolchinsky, AJ Gates, LM Rocha, "Modularity and the Spread of Perturbations in Complex Dynamical Systems", *Physical Review E*, 2015. [link](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.92.060801) [arxiv](http://arxiv.org/abs/1509.04386)
+> A Kolchinsky, AJ Gates, LM Rocha, "Modularity and the spread of perturbations in complex dynamical systems", *Physical Review E*, 2015. [link](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.92.060801) [arxiv](http://arxiv.org/abs/1509.04386)
 
 Four Python files are included:
 * `examples.py`: This includes code to run some example decompositions.  The first one is Example 1 from the paper (system of logistic maps coupled in a hierarchically-modular manner).  The second and third examples in the code are from Example 2 in the paper (one coupled map lattice [CML] in the modular regime, and one in the diffusive regime).  Please note that due to randomization of initial conditions and minor code differences, the output results will not be numerically equal to those reported in the paper.
